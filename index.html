@@ -10,6 +10,14 @@
 
     <style type="text/css">
       
+    p {
+      text-indent: 2em;
+    }
+
+    p + p {
+    text-indent: 2em;
+    } 
+
     .page-header{
       align-content: middle;
       text-align: center;
@@ -29,8 +37,21 @@
       float:right;
     }
 
+    .navbar-brand{
+      float:left;
+    }
+
+    .collapse{
+      float:right;
+    }
+
     .jumbotron{
       background-color: #FFF;
+    }
+
+    .row {
+      border-bottom: 1px solid #000;
+      padding-top: 20px;
     }
 
     .row-flex {
@@ -42,13 +63,13 @@
     }
 
     [class*="col-"] {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
 
     .content {
       height: 100%;
-      padding: 20px 20px 10px;
-      background-color: rgb(5,5,5,.03);
+      padding: 20px 20px 10px 10px;
+      /*background-color: rgb(5,5,5,.03);*/
       text-align:center;
       display: flex;
       flex-direction: column;
@@ -57,6 +78,11 @@
 
     .content > h3{
       vertical-align: middle !important;
+    }
+
+    .content-text > h3{
+      vertical-align: middle !important;
+      text-align:center;
     }
 
     </style>
@@ -106,33 +132,16 @@
             </div>
 
             <div class="col-lg-8 col-md-8 col-sm-9 col-xs-9">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>I am Ângelo Rafael da Silva Coelho, born in the Outomn of 1995 in the city of Braga. I am a Computer Science graduate (level 06) at University of Minho with interest in technologies and in particular in the information one. </p>
+              <p>At the moment I am in search of new challenges in the Software Development branch, being interested in acquiring knowledge and experience in real industry scenario.</p>
             </div>
           </div>
 
           <div id="skillset" class="row row-flex">
             <div class="col-lg-8 col-md-8 col-sm-9 col-xs-9">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>In the past years I've learnt a lot, professionally and academically speaking.</p>
+              <p>My student-worker status has gave me a good task and deadline management skills also providing me good adaptability to generic informatics tools and programming languages having resourcefulness with urging necessities.</p>
+              <p>My waiter and barman experience instructed me with great team work ability and oral communication in various natural languages, being totally comfortable with Portuguese (native) and English with moderate knowledge of French and Spanish.</p>
             </div>
 
             <div class="col-lg-4 col-md-4 col-sm-3 col-xs-3">
@@ -151,17 +160,16 @@
             </div>
 
             <div class="col-lg-8 col-md-8 col-sm-9 col-xs-9">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <div class="content-text">
+                <h3>Computer Science Degree</h3>
+              </div>
+              <p>First cycle degree with a study plan based on Mathematics (Calculus, Discrete Mathematics, Algebras, Computational Theory of Numbers, etc.) and Informatics (Object Oriented Programming, Algorithmic
+     Laboratory, Compilers and Language Processors, etc.).</p>
+
+              <div class="content-text">
+                <h3>Science and Technologies Highschool Degree</h3>
+                <p>Completed the highschool Science and Technologies study plan with Mathematics, Chemestry and Phisics, Biology and Portuguese final national exams. </p>
+              </div>
             </div>
           </div>
 
@@ -187,7 +195,7 @@
             </div>
           </div>
 
-          <div id="contacts" class="row row-flex">
+          <div id="links" class="row row-flex">
             <div class="col-lg-4 col-md-4 col-sm-3 col-xs-3">
               <div class="content">
                 <h3>Links</h3>

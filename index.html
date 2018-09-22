@@ -12,6 +12,7 @@
 
 
     <style type="text/css">
+
       
     p {
       text-indent: 2em;
@@ -21,16 +22,25 @@
     text-indent: 2em;
     } 
 
+
+    .col-md-8 > .container{
+      text-align:center;
+    }
+
     .page-header{
       align-content: middle;
       text-align: center;
-      padding: 20px 20px 20px 20px;
+      padding: 20px 20px 10px 20px;
     }
 
     .page-header > img{
       height: 250px; 
     }
 
+    .navbar{
+      border: 1px solid #000;
+      border-radius: 30px;
+    }
 
     .navbar-nav{
       float:right;
@@ -48,33 +58,30 @@
     .jumbotron{
       background-color: #FFF;
       font-family: 'Raleway', sans-serif;
+      padding-top: 0px;
     }
 
     .row {
       border-bottom: 1px solid #000;
-      padding-top: 35px;
+      padding: 75px 0px 55px 0px;
     }
 
     .row  .row {
       border-bottom: none;
-      padding-top: 35px;
+      /*padding-top: 35px;*/
     }
 
-     {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+     .col > .row {
+      padding: 0px 0px 0px 0px;
     }
 
-    [class*="col-"] {
+    /*[class*="col-"] {
       margin-bottom: 20px;
-    }
+    }*/
 
     .content {
       height: 100%;
-      padding: 20px 20px 10px 10px;
+      /*padding: 20px 20px 10px 10px;*/
       /*background-color: rgb(5,5,5,.03);*/
       text-align:center;
       display: flex;
@@ -87,12 +94,15 @@
 
     .content > h3{
       vertical-align: middle !important;
+      font-size: 40px;
     }
 
     .content-text > h4{
       vertical-align: middle !important;
       text-align:center;
     }
+
+  
 
     </style>
 
@@ -108,7 +118,7 @@
 
       </div>
 
-      <nav class="navbar navbar-fixed-top  navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar sticky-top  navbar-expand-md navbar-light bg-light" >
         <a class="navbar-brand" href="#">
           <h2><em>Ângelo Coelho</em></h2>
         </a>
@@ -117,8 +127,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ">
-            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#aboutme">About me</a>
+            <a class="nav-item nav-link" href="#brief">Brief</a>
             <a class="nav-item nav-link" href="#skillset">Skillset</a>
             <a class="nav-item nav-link" href="#education">Education</a>
             <a class="nav-item nav-link" href="#projects">Projects</a>
@@ -131,17 +140,17 @@
     <div class="container">
       <div class="jumbotron">
         
-          <div id="aboutme" class="row ">
+          <div id="brief" class="row ">
 
 
-            <div class=" col-sm-4 ">
+            <div class="col col-md-4 ">
               <div class="content">
-                <h3>About me</h3>
+                <h3>Brief</h3>
               </div>
               
             </div>
 
-            <div class=" col-sm-8 ">
+            <div class=" col-md-8 ">
               <p>I am Ângelo Rafael da Silva Coelho, born in the Outomn of 1995 in the city of Braga. I am a Computer Science graduate (level 06) at University of Minho with interest in technologies and in particular in the information one. </p>
               <p>At the moment I am in search of new challenges in the Software Development branch, being interested in acquiring knowledge and experience in real industry scenario.</p>
             </div>
@@ -152,18 +161,17 @@
 
           <div id="skillset" class="row flex-sm-row-reverse">
 
-            <div class="col-sm-4 ">
+            <div class="col-md-4 ">
               <div class="content">
                 <h3>Skillset</h3>
               </div>
             </div>
 
-            <div class=" col-sm-8 ">
-             <!--  <p>In the past years I've learnt a lot, professionally and academically speaking.</p> -->
+            <div class="col col-md-8 ">
               <p>For long years I was a student-worker which taught me various team-enviroment skills as I was a waiter/barman. Apart from this, in my academy, I instructed myself with the best programming practices and got sharp on deadline handling.</p>
               <p>I have knowledge and experience in different degrees in the following technologies:</p>
               <div class="row">
-                <div class="col-sm-6">
+                <div class="col-xs-6">
                   <ul>
                     <li>Java</li>
                     <li>C</li>
@@ -173,8 +181,7 @@
                     <li>MySQL</li>
                   </ul>
                 </div>
-
-                <div class="col-sm-6">
+                <div class="col-xs-6">
                   <ul>
                     <li>Python</li>
                     <li>Flex/Bison</li>
@@ -194,13 +201,13 @@
           <div id="education" class="row ">
             
 
-            <div class=" col-sm-4 ">
+            <div class=" col-md-4 ">
               <div class="content">
                 <h3>Education</h3>
               </div>
             </div>
 
-            <div class=" col-sm-8  ">
+            <div class=" col-md-8  ">
               <div class="content-text">
                 <h4>Computer Science Degree</h4>
               </div>
@@ -218,13 +225,13 @@
 
           <div id="projects" class="row flex-sm-row-reverse">
 
-            <div class="col-sm-4 ">
+            <div class="col-md-4 ">
               <div class="content">
                 <h3>Relevant Projects</h3>
               </div>
             </div>
 
-            <div class=" col-sm-8 ">
+            <div class=" col-md-8 ">
               <h4><b>ImOObiliária</b></h4>
               <p>Real estate management program developed in Java.</p>
 
@@ -243,24 +250,28 @@
 
           <div id="links" class="row ">
             
-            <div class=" col-sm-4 ">
+            <div class=" col-md-4 ">
               <div class="content">
                 <h3>Links</h3>
               </div>
             </div>
 
-            <div class=" col-sm-8">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class=" col-md-8">
+              <div class="container">
+                
+
+                  <button type="button" class="btn btn-lg btn-light"><a href="doc/cv.pdf" target="_blank"><em>Resume</em></a></button>
+
+
+
+                 <button type="button" class="btn btn-lg btn-primary"><a href="https://www.linkedin.com/in/%C3%A2ngelo-coelho-7b486711a/" target="_blank" style="color:#000;"><em>Linked in</em></a></button>
+
+
+
+                  <button type="button" class="btn btn-lg btn-dark"><a href="https://github.com/angelorscoelho" target="_blank"><em>GitHub</em></a></button>
+
+
+              </div>
             </div>
 
             
@@ -268,24 +279,24 @@
 
           <div id="contacts" class="row flex-sm-row-reverse">
 
-            <div class=" col-sm-4">
+            <div class=" col-md-4">
               <div class="content">
                 <h3>Contacts</h3>
               </div>
             </div>
 
-            <div class=" col-sm-8 ">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class=" col-md-8">
+              <div class="container">
+                
+
+                  <button type="button" class="btn btn-lg btn-light"><a href="tel:+351915479201" target="_blank"><em>+351 915 479 201</em></a></button>
+
+
+                 <button type="button" class="btn btn-lg btn-light"><a href="mailto:ngelorscoelho@gmail.com" target="_blank" style="color:#000;"><em>angelorscoelho@gmail.com</em></a></button>
+
+
+
+              </div>
             </div>
 
             

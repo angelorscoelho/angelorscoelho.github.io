@@ -8,6 +8,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Merienda" rel="stylesheet">
+
+
     <style type="text/css">
       
     p {
@@ -28,10 +31,6 @@
       height: 250px; 
     }
 
-    .page-header > h1{
-      font-size: 30pt;
-    }
-
 
     .navbar-nav{
       float:right;
@@ -39,6 +38,7 @@
 
     .navbar-brand{
       float:left;
+      font-family: 'Merienda', cursive;
     }
 
     .collapse{
@@ -47,14 +47,20 @@
 
     .jumbotron{
       background-color: #FFF;
+      font-family: 'Raleway', sans-serif;
     }
 
     .row {
       border-bottom: 1px solid #000;
-      padding-top: 20px;
+      padding-top: 35px;
     }
 
-    .row-flex {
+    .row  .row {
+      border-bottom: none;
+      padding-top: 35px;
+    }
+
+     {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -74,6 +80,8 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      font-size: 25px;
+      font-weight: 900;
     }
 
     .content > h3{
@@ -101,13 +109,13 @@
 
       <nav class="navbar navbar-fixed-top  navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
-          <h2>Ângelo Coelho</h2>
+          <h2><em>Ângelo Coelho</em></h2>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
+          <div class="navbar-nav ">
             <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link" href="#aboutme">About me</a>
             <a class="nav-item nav-link" href="#skillset">Skillset</a>
@@ -119,47 +127,72 @@
         </div>
       </nav>
 
+    <div class="container">
       <div class="jumbotron">
         
-          <div id="aboutme" class="row row-flex ">
+          <div id="aboutme" class="row flex-sm-row-reverse">
 
-            <div class="col-lg-4 col-md-4 col-sm-3 col-xs-3">
+
+            <div class=" col-sm-8 ">
+              <p>I am Ângelo Rafael da Silva Coelho, born in the Outomn of 1995 in the city of Braga. I am a Computer Science graduate (level 06) at University of Minho with interest in technologies and in particular in the information one. </p>
+              <p>At the moment I am in search of new challenges in the Software Development branch, being interested in acquiring knowledge and experience in real industry scenario.</p>
+            </div>
+
+
+            <div class=" col-sm-4 ">
               <div class="content">
                 <h3>About me</h3>
               </div>
               
-              
-            </div>
-
-            <div class="col-lg-8 col-md-8 col-sm-9 col-xs-9">
-              <p>I am Ângelo Rafael da Silva Coelho, born in the Outomn of 1995 in the city of Braga. I am a Computer Science graduate (level 06) at University of Minho with interest in technologies in particular the information one. </p>
-              <p>At the moment I am in search of new challenges in the Software Development branch, being interested in acquiring knowledge and experience in a real industry scenario.</p>
             </div>
           </div>
 
-          <div id="skillset" class="row row-flex">
-            <div class="col-lg-8 col-md-8 col-sm-9 col-xs-9 col-xs-push-9">
-              <p>In the past years I've learnt a lot, professionally and academically speaking.</p>
-              <p>My student-worker status has gave me a good task and deadline management skills also providing me good adaptability to generic informatics tools and programming languages having resourcefulness with urging necessities.</p>
-              <p>My waiter and barman experience instructed me with great team work ability and oral communication in various natural languages, being totally comfortable with Portuguese (native) and English with moderate knowledge of French and Spanish.</p>
-            </div>
 
-            <div class="col-lg-4 col-md-4 col-sm-3 col-xs-3 col-xs-pull-3">
+          <div id="skillset" class="row flex-sm-row-reverse">
+
+            <div class="col-sm-4 ">
               <div class="content">
                 <h3>Skillset</h3>
               </div>
             </div>
+
+            <div class=" col-sm-8 ">
+             <!--  <p>In the past years I've learnt a lot, professionally and academically speaking.</p> -->
+              <p>For long years I was a student-worker which taught me various team-enviroment skills as I was a waiter/barman. Apart from this, in my academy, I instructed myself with the best programming practices and got sharp on deadline handling.</p>
+              <p>I have knowledge and experience in different degrees in the following technologies:</p>
+              <div class="row">
+                <div class="col-sm-6">
+                  <ul>
+                    <li>Java</li>
+                    <li>C</li>
+                    <li>Unix/Linux</li>
+                    <li>HTML</li>
+                    <li>CSS (Bootstrap)</li>
+                    <li>MySQL</li>
+                  </ul>
+                </div>
+
+                <div class="col-sm-6">
+                  <ul>
+                    <li>Python</li>
+                    <li>Flex/Bison</li>
+                    <li>Erlang</li>
+                    <li>Haskell</li>
+                    <li>Matlab</li>
+                    <li>Wolfram Mathematica</li>
+                  </ul>
+                </div>
+              </div>    
+            </div>
+
+
           </div>
 
 
-          <div id="education" class="row row-flex">
-            <div class="col-lg-4 col-md-4 col-sm-3 col-xs-3">
-              <div class="content">
-                <h3>Education</h3>
-              </div>
-            </div>
+          <div id="education" class="row flex-sm-row-reverse">
+            
 
-            <div class="col-lg-8 col-md-8 col-sm-9 col-xs-9 ">
+            <div class=" col-sm-8  ">
               <div class="content-text">
                 <h4>Computer Science Degree</h4>
               </div>
@@ -171,10 +204,44 @@
                 <p>Completed the highschool Science and Technologies study plan with Mathematics, Chemestry and Phisics, Biology and Portuguese final national exams. </p>
               </div>
             </div>
+
+            <div class=" col-sm-4 ">
+              <div class="content">
+                <h3>Education</h3>
+              </div>
+            </div>
+
           </div>
 
-          <div id="projects" class="row row-flex">
-            <div class="col-lg-8 col-md-8 col-sm-9 col-xs-9">
+          <div id="projects" class="row flex-sm-row-reverse">
+
+            <div class="col-sm-4 ">
+              <div class="content">
+                <h3>Relevant Projects</h3>
+              </div>
+            </div>
+
+            <div class=" col-sm-8 ">
+              <h4><b>ImOObiliária</b></h4>
+              <p>Real estate management program developed in Java.</p>
+
+              <h4><b>Red Spot</b></h4>
+              <p>Multiplayer game made for concurrency programming with the client side developed in Java (also with Processing) and server side developed in Erlang.</p>
+
+              <h4><b>StackOverflow Code Identifier</b></h4>
+              <p>Untagged code identifier program developed in Python and C/FLEX.</p>
+
+              <h4><b>Crosswords</b></h4>
+              <p>Crosswords game with in-play solution check developed in C.</p>
+            </div>
+
+            
+          </div>
+
+          <div id="links" class="row flex-sm-row-reverse">
+            
+
+            <div class=" col-sm-8">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -188,57 +255,39 @@
               proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
 
-            <div class="col-lg-4 col-md-4 col-sm-3 col-xs-3">
-              <div class="content">
-                <h3>Projects</h3>
-              </div>
-            </div>
-          </div>
-
-          <div id="links" class="row row-flex">
-            <div class="col-lg-4 col-md-4 col-sm-3 col-xs-3">
+            <div class=" col-sm-4 ">
               <div class="content">
                 <h3>Links</h3>
               </div>
             </div>
-
-            <div class="col-lg-8 col-md-8 col-sm-9 col-xs-9">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
           </div>
 
-          <div id="contacts" class="row row-flex">
-            <div class="col-lg-8 col-md-8 col-sm-9 col-xs-9">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
+          <div id="contacts" class="row flex-sm-row-reverse">
 
-            <div class="col-lg-4 col-md-4 col-sm-3 col-xs-3">
+            <div class=" col-sm-4">
               <div class="content">
                 <h3>Contacts</h3>
               </div>
             </div>
+
+            <div class=" col-sm-8 ">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+
+            
           </div>
 
+        </div>
       </div>
 
     </div>

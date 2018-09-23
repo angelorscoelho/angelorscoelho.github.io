@@ -1,0 +1,61 @@
+
+
+
+
+
+			body{
+				font-size: 65%;
+				font-family: arial, sans-serif;
+				background-color: #000;	
+			}
+
+			.page-header{
+				font-family: 'Spirax';
+				vertical-align: middle;
+				text-align: center;
+				font-size: 40px;
+				color: rgb(220,0,30);
+				border-bottom: 2px solid red; 
+
+			}
+
+			.carousel-item {
+				overflow: hidden;
+    			padding-top: 60%; 
+			}
+
+			.carousel-item img {
+				position: absolute;
+			    height: 100%;
+			    left: 0;
+			    top: 0;
+			}
+
+			.carousel-caption h1{
+			  font-size: 3.4em;
+			  font-family: 'Pacifico', cursive;
+			  padding-bottom: .4em;
+			}
+			
+			.carousel-caption p{
+			  font-size: 2em;
+			}
+
+			.jumbotron{
+				background-color: #000;
+			}
+
+
+			#cols{
+				color: #fff;
+			}
+
+
+			ul{
+				float:right;
+			}
+			li a {
+				font-size: 15px;
+			}
+
+			

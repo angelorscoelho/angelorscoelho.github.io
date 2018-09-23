@@ -9,6 +9,14 @@
 				background-color: #000;	
 			}
 
+			ul{
+				float:right;
+			}
+			li a {
+				font-size: 15px;
+			}
+
+
 			.page-header{
 				font-family: 'Spirax';
 				vertical-align: middle;
@@ -18,6 +26,11 @@
 				border-bottom: 2px solid red; 
 
 			}
+
+			.container{
+				max-width: 900px;
+			}
+
 
 			.carousel-item {
 				overflow: hidden;
@@ -50,12 +63,5 @@
 				color: #fff;
 			}
 
-
-			ul{
-				float:right;
-			}
-			li a {
-				font-size: 15px;
-			}
 
 			

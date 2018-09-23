@@ -128,12 +128,12 @@
 
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ">
-            <a class="nav-item nav-link" href="#brief">Brief</a>
-            <a class="nav-item nav-link" href="#skillset">Skillset</a>
-            <a class="nav-item nav-link" href="#education">Education</a>
-            <a class="nav-item nav-link" href="#projects">Projects</a>
-            <a class="nav-item nav-link" href="#links">Links</a>
-            <a class="nav-item nav-link" href="#contacts">Contacts</a>
+            <li><a class="nav-item nav-link" href="#brief">Brief</a></li>
+            <li><a class="nav-item nav-link" href="#skillset">Skillset</a></li>
+            <li><a class="nav-item nav-link" href="#education">Education</a></li>
+            <li><a class="nav-item nav-link" href="#projects">Projects</a></li>
+            <li><a class="nav-item nav-link" href="#links">Links</a></li>
+            <li><a class="nav-item nav-link" href="#contacts">Contacts</a></li>
           </div>
         </div>
       </nav>
@@ -233,6 +233,11 @@
             </div>
 
             <div class=" col-md-8 ">
+
+              <h4><b>Restaurant themed website</b></h4>
+              <p>Generic restaurant business website developed in HTML/CSS(Bootstrap). Visit at:  <a href="restaurante/index.html" target="_blank">Restaurant Website.</a></p>
+              
+
               <h4><b>ImOObiliária</b></h4>
               <p>Real estate management program developed in Java.</p>
 
@@ -309,6 +314,17 @@
     </div>
 
     <!-- Optional JavaScript -->
+    <script type="text/javascript">
+      $(".navbar-nav li a").click(function (event) {
+    // check if window is small enough so dropdown is created
+    var toggle = $(".navbar-toggle").is(":visible");
+    if (toggle) {
+      $(".navbar-collapse").collapse('hide');
+    }
+  });
+    </script>
+
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
